@@ -1,7 +1,7 @@
 <html>
   <body>
     <button onclick="a()">BAS</button>
-    <iframe id="youtube-player" src="https://www.youtube-nocookie.com/embed/WWNSo-SB0bs?enablejsapi=1&autoplay=1&loop=1"></iframe>
+    <iframe tabindex="-1" src="https://www.youtube-nocookie.com/embed/WWNSo-SB0bs?enablejsapi=1&autoplay=1&loop=1"></iframe>
     <script>
       function a() {
       document.querySelector("iframe").contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
