@@ -1,5 +1,6 @@
 <html>
   <body>
+    <button onclick="document.querySelector('iframe').contentWindow.postMessage('{\"event\":\"command\",\"func\":\"playVideo\",\"args\":\"\"}', '*');">BAS</button>
     <iframe id="youtube-player" src="https://www.youtube-nocookie.com/embed/WWNSo-SB0bs?enablejsapi=1"></iframe>
   </body>
 </html>
